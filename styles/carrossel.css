@@ -1,0 +1,235 @@
+
+.carrossel{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carrossel__container__titulo{
+    width: 100%;
+    background: var(--cor-do-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrossel__titulo{
+    padding: 24px 0px 8px;
+    color: var(--cor-do-titulo-menu);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.icones-paginas{
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.pagina__slides{
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #C4C4C4;
+}
+
+.galeria-wrapper{
+    width: 100vw;
+    padding: 16px 0 20px 0; 
+}
+
+
+.galeria{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+
+.galeria::-webkit-scrollbar {
+    width: 0px;
+}
+
+.galeria__item{
+    scroll-snap-align: center;
+    width: 179px;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+    
+}
+
+.botao-carrossel{
+    width: 48px;
+    height: 48px;
+    background: var(--cor-do-gradiente);
+    border-radius: 48px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: none;
+    position: relative;
+    color: var(--cor-do-header);
+    font-size: large;
+    font-weight: 700;
+    z-index: 4;
+}
+
+.left{
+    left: -38px;
+
+}
+.right{
+    right: -38px;
+}
+
+.carrossel__container-anucio{
+    display: flex;
+    width: 348px;
+    height: 263px;
+    padding: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: var(--cor-do-header);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-anucio_primeira_coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 179px;
+}
+
+.container-anucio_segunda_coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anuncio__estrelas{
+    width: 91px;
+}
+
+.anuncio__sugestao{
+    color: var(--cor-do-titulo-menu);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+
+.anuncio__nome-do-livro{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--cor-do-titulo-anuncio);
+}
+
+.anuncio__descricao{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--cor-da-descricao-anuncio);
+    width: 148px;
+}
+.container-anucio_rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 348px;
+    align-items: center;
+    align-self: center;
+    gap: 87px;
+}
+
+.anucio__menu__imagens{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.anuncio__link-saiba-mais{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--cor-do-header);
+    background-color: var(--cor-do-titulo-menu);
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    width: 161px;
+}
+
+@media (min-width: 1024px) {
+    .carrossel__titulo{
+        padding: 51px 0px 16px;
+        font-size: 26px;
+        line-height: 39px;
+    }
+   
+    .icones-paginas{
+        width: 84px;
+        gap: 12px;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    .pagina__slides{
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+    }
+
+    .botoes-carrossel{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 725px;
+        top: 172px;
+    }
+
+    .galeria-wrapper{
+        width: 740px;
+        padding: 13px 0 61px 0;
+        
+    }
+
+    .galeria{
+        
+        gap: 58px
+    }
+
+    .galeria__item{
+        width: 192px;
+        height: 270.367px;
+        padding-right: 16px;
+        filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.15));
+    }
+
+    .item-inicial{
+        display: block;
+    }
+
+    .botao-carrossel{
+        display: block;
+    }
+}
+
+@media (min-width: 1728px) {
+    .carrossel__titulo{
+        padding: 42px 0px 16px;
+        font-size: 32px;
+        line-height: 48px;
+    }
+}

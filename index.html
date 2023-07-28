@@ -8,87 +8,206 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<header>
-    <section class="container">
-        <div class="container__esquerdo">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label class ="container__menu__hamburguer" for="menu">
-                <span class="menu-hamburguer"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">PROGRAMAÇÃO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">FRONT-END</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">INFRAESTRUTURA</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">BUSINESS</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">DESIGN & UX</a>
-                </li>
-            </ul>
-            <img class="imagem-logo" src="assets/header/Logo.svg" alt="logo AluraBooks">
+
+<body>
+    <header>
+        <section class="container">
+            <div class="container__esquerdo">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label class ="container__menu__hamburguer" for="menu">
+                    <span class="menu-hamburguer"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">PROGRAMAÇÃO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">FRONT-END</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">INFRAESTRUTURA</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">BUSINESS</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">DESIGN & UX</a>
+                    </li>
+                </ul>
+                <img class="imagem-logo" src="assets/header/Logo.svg" alt="logo AluraBooks">
+            </div>
+            <div class="container__logo">
+                <img class="imagem-logo-nome" src="assets/header/Logo-nome.svg" alt="Logo da AluraBooks">
+            </div>
+            <nav class="container__centro">
+                <input type="checkbox" id="menu-medio" class="container__botao__medio">
+                <label class ="container__menu__categorias" for="menu-medio">
+                    <span class="menu-categorias cor-links">CATEGORIAS</span>
+                </label>
+                <ul class="lista-menu-categorias">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">PROGRAMAÇÃO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">FRONT-END</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">INFRAESTRUTURA</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">BUSINESS</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link cor-links">DESIGN & UX</a>
+                    </li>
+                </ul>
+                <a class="container__centro__links cor-links" href="#">FAVORITOS</a>
+                <a class="container__centro__links cor-links" href="#">MINHA ESTANTE</a>
+            </nav>
+            <div class="container__direito">
+                <a href="#">
+                    <img class="imagem-menu imagem-favoritos" src="assets/header/Favoritos.svg" alt="Meus Favoritos">
+                </a>
+                <a class="container__direito__link" href="#">
+                    <img class="imagem-menu" src="assets/header/Compras.svg" alt="Carrinho de compras">
+                    <span class="texto-menu cor-links">Minha sacola</span>
+                </a>
+                <a class="container__direito__link" href="#">
+                    <img class="imagem-menu" src="assets/header/Usuário.svg" alt="Usuario">
+                    <span class="texto-menu cor-links">Meu perfil</span>
+                </a>
+                
+            </div>
+        </section>
+        
+    </header>
+    <section class="banner-pesquisa">
+        <h1 class="banner-pesquisa__titulo">Já sabe por onde começar?</h1>
+        <p class="banner-pesquisa__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input class="pesquisa" type="text" placeholder="Qual será sua próxima leitura?">
+    
+    </section>
+    <section class="carrossel" id="container-carrosel">
+        <div class="carrossel__container__titulo">
+            <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         </div>
-        <div class="container__logo">
-            <img class="imagem-logo-nome" src="assets/header/Logo-nome.svg" alt="Logo da AluraBooks">
+        <div class="icones-paginas">
+            <div class="pagina__slides" id="pagina-1">
+            </div>
+            <div class="pagina__slides" id="pagina-2">
+            </div>
+            <div class="pagina__slides" id="pagina-3">
+            </div>
+            <div class="pagina__slides" id="pagina-4">
+            </div>
         </div>
-        <nav class="container__centro">
-            <input type="checkbox" id="menu-medio" class="container__botao__medio">
-            <label class ="container__menu__categorias" for="menu-medio">
-                <span class="menu-categorias cor-links">CATEGORIAS</span>
-            </label>
-            <ul class="lista-menu-categorias">
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">PROGRAMAÇÃO</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">FRONT-END</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">INFRAESTRUTURA</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">BUSINESS</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link cor-links">DESIGN & UX</a>
-                </li>
-            </ul>
-            <a class="container__centro__links cor-links" href="#">FAVORITOS</a>
-            <a class="container__centro__links cor-links" href="#">MINHA ESTANTE</a>
-        </nav>
-        <div class="container__direito">
-            <a href="#">
-                <img class="imagem-menu imagem-favoritos" src="assets/header/Favoritos.svg" alt="Meus Favoritos">
-            </a>
-            <a class="container__direito__link" href="#">
-                <img class="imagem-menu" src="assets/header/Compras.svg" alt="Carrinho de compras">
-                <span class="texto-menu cor-links">Minha sacola</span>
-            </a>
-            <a class="container__direito__link" href="#">
-                <img class="imagem-menu" src="assets/header/Usuário.svg" alt="Usuario">
-                <span class="texto-menu cor-links">Meu perfil</span>
-            </a>
+        <div class="carrosel__container__slides">
+            <div class="botoes-carrossel carrosel1" data-botoes>
+                <button type="button" class="botao-carrossel left" id="botao-left1" data-direction="left">&lt;</button>
+                <button type="button" class="botao-carrossel right" id="botao-right1" data-direction="right">&gt;</button>
+            </div>
+            <div class="galeria-wrapper" id="galeria1" data-scrolls>
+                <div class="galeria" id="galeria-grande-1">
+                    <img src="assets/carrossel/ApacheKafka.svg" alt="livro apache kafka" class="galeria__item">
+                    <img src="assets/carrossel/Arquitetura.svg" alt="livro Arquitetura" class="galeria__item">
+                    <img src="assets/carrossel/Gestão.svg" alt="livro gestao" class="galeria__item">
+                    <img src="assets/carrossel/Javascript.svg" alt="livro Javascript" class="galeria__item">
+                    <img src="assets/carrossel/Nodejs.svg" alt="livro nodejs" class="galeria__item">
+                    <img src="assets/carrossel/Portugol.svg" alt="livro portugol" class="galeria__item">
+                    <img src="assets/carrossel/ReactNative.svg" alt="livro react native" class="galeria__item">
+                    <img src="assets/carrossel/Tuning.svg" alt="livro tuning" class="galeria__item">
+                </div>
+            </div>
+        </div>
+        <div class="carrossel__container-anucio">
+            <div class="container-anucio_primeira_coluna">
+                <h5 class="anuncio__sugestao">Talvez você também se interesse por...</h5>
+                <h6 class="anuncio__nome-do-livro">Angular 11 e Firebase</h6>
+                <p class="anuncio__descricao">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <div class="container-anucio_segunda_coluna">
+                <img class="anuncio__imagem" src="assets/anuncio/Angular.svg" alt="imagem com a logo do framework angular">
+            </div>
+            <div class="container-anucio_rodape">
+                <div class="anucio__menu__imagens">
+                    <a href="#"><img src="assets/anuncio/favoritos.svg" alt="adicionar aos favoritos, imagem de coracao"></a>
+                    <a href="#"><img src="assets/anuncio/carrinho.svg" alt="adicionar os carrinho, imagem de sacola"></a>
+                </div>
+                <a href="#" class="anuncio__link-saiba-mais">Saiba mais</a>
+            </div>
             
+           
+        </div>
+        <div class="carrossel__container__titulo">
+            <h3 class="carrossel__titulo">MAIS VENDIDOS</h2>
+        </div>
+        <div class="icones-paginas">
+            <div class="pagina__slides" id="pagina-5">
+            </div>
+            <div class="pagina__slides" id="pagina-6">
+            </div>
+            <div class="pagina__slides" id="pagina-7">
+            </div>
+            <div class="pagina__slides" id="pagina-8">
+            </div>
+        </div>
+        <div class="carrosel__container__slides">
+            <div class="botoes-carrossel carrosel2" data-botoes>
+                <button type="button" class="botao-carrossel left" id="botao-left2" data-direction="left">&lt;</button>
+                <button type="button" class="botao-carrossel right" id="botao-right2" data-direction="right">&gt;</button>
+            </div>
+            <div class="galeria-wrapper" id="galeria2" data-scrolls>
+                <div class="galeria" id="galeria-grande-2">
+                    <img src="assets/carrossel/ApacheKafka.svg" alt="livro apache kafka" class="galeria__item">
+                    <img src="assets/carrossel/Arquitetura.svg" alt="livro Arquitetura" class="galeria__item">
+                    <img src="assets/carrossel/Gestão.svg" alt="livro gestao" class="galeria__item">
+                    <img src="assets/carrossel/Javascript.svg" alt="livro Javascript" class="galeria__item">
+                    <img src="assets/carrossel/Nodejs.svg" alt="livro nodejs" class="galeria__item">
+                    <img src="assets/carrossel/Portugol.svg" alt="livro portugol" class="galeria__item">
+                    <img src="assets/carrossel/ReactNative.svg" alt="livro react native" class="galeria__item">
+                    <img src="assets/carrossel/Tuning.svg" alt="livro tuning" class="galeria__item">
+                </div>
+            </div>
+        </div>
+        <div class="carrossel__container-anucio">
+            <div class="container-anucio_primeira_coluna">
+                <img class="anuncio__estrelas" src="assets/anuncio/Estrelinhas.svg" alt="qualificacao cinco estrelas">
+                <h5 class="anuncio__sugestao">Autora do Mês</h5>
+                <h6 class="anuncio__nome-do-livro">Juliana Agarikov</h6>
+                <p class="anuncio__descricao">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            <div class="container-anucio_segunda_coluna">
+                <img class="anuncio__imagem" src="assets/anuncio/Perfil-escritora 1.svg" alt="Foto da Autora">
+            </div>
+            <div class="container-anucio_rodape">
+                <div class="anucio__menu__imagens">
+                    <a href="#"><img src="assets/anuncio/favoritos.svg" alt="adicionar aos favoritos, imagem de coracao"></a>
+                    <a href="#"><img src="assets/anuncio/carrinho.svg" alt="adicionar os carrinho, imagem de sacola"></a>
+                </div>
+                <a href="#" class="anuncio__link-saiba-mais">Saiba mais</a>
+            </div>
+            
+           
         </div>
     </section>
-    
-</header>
-<section class="banner-pesquisa">
-    <h1 class="banner-pesquisa__titulo">Já sabe por onde começar?</h1>
-    <p class="banner-pesquisa__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-    <input class="pesquisa" type="text">
-    <span class="pesquisa-placeholder"><img class="imagem-lupa" src="assets/Pesquisa.svg">Qual será sua próxima leitura?</span>
-
-    
-</section>
-<body>
-    
+    <div class="espacamento-carrossel-topicos"></div>
+    <section class="container-topicos">
+        <h4 class="container-topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h4>
+        <div class="container-topicos__limites">
+            <a href="#" class="container-topicos__topicos">Android</a href="#">
+            <a href="#" class="container-topicos__topicos">Marketing Digital</a href="#">
+            <a href="#" class="container-topicos__topicos">Agile</a href="#">
+            <a href="#" class="container-topicos__topicos">Startups</a href="#">
+            <a href="#" class="container-topicos__topicos">HTML & CSS</a href="#">
+            <a href="#" class="container-topicos__topicos">Python</a href="#">
+            <a href="#" class="container-topicos__topicos">OO</a href="#">
+            <a href="#" class="container-topicos__topicos">Java</a href="#">
+        </div>
+        
+    </section>
+   
+    <!-- <script src="js/carrossel.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 </html>
