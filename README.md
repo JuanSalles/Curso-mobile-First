@@ -2,7 +2,7 @@
 
  <h2>Proejto feito no curso de mobile-first da ALURA</h1>
  
- <p>Foi proposto pela professora, a criação de uma livraria online, utilizando os conceitos de mobile-fisrt</p>
+ <p>Foi proposto pela professora, a criação de uma livraria online, utilizando os conceitos de mobile-first</p>
  
  <h3>O projeto utiliza HTML, CSS e JS:</h3>
 
