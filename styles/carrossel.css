@@ -5,7 +5,8 @@
     position: relative;
     top: 80px;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .carrossel__container__titulo{
@@ -25,9 +26,9 @@
 }
 
 .icones-paginas{
-    width: 56px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 8px;
     align-items: center;
     padding-top: 12px;
@@ -92,7 +93,7 @@
 
 .carrossel__container-anucio{
     display: flex;
-    width: 348px;
+    width: 380px;
     height: 263px;
     padding: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -178,10 +179,11 @@
     }
    
     .icones-paginas{
-        width: 84px;
+        width: 100%;
         gap: 12px;
         padding-top: 32px;
         padding-bottom: 16px;
+        justify-content: center;
     }
 
     .pagina__slides{
@@ -224,12 +226,43 @@
     .botao-carrossel{
         display: block;
     }
+
+    .carrossel__container-anucio{
+        width: 588px;
+        padding: 23px 23px 22px 18px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .anuncio__descricao{
+        width:335px
+    }
+
+    .container-anucio_rodape{
+        width: 100%;
+        margin-top: 7px;
+    }
+
+    .container-anucio_primeira_coluna{
+        height: 127px;
+    }
+
+
 }
 
 @media (min-width: 1728px) {
+
+    
     .carrossel__titulo{
         padding: 42px 0px 16px;
         font-size: 32px;
         line-height: 48px;
     }
+    .carrossel__container-anucio{
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 70px;
+    }
+
+    
 }

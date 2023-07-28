@@ -2,6 +2,9 @@
 @import url(banner.css);
 @import url(carrossel.css);
 @import url(topicos.css);
+@import url(footer.css);
+@import url(contato.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 
@@ -15,6 +18,10 @@
     --cor-da-descricao-anuncio: rgba(0, 0, 0, 0.85);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
@@ -22,5 +29,4 @@ body{
     flex-direction: column;
     align-items: center;
     height: 200vh;
-    box-sizing: border-box;
 }
