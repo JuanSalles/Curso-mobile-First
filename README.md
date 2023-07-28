@@ -9,3 +9,5 @@
  <p>No curso é apresentado um plug-in para montar a logica do carrousel, porem, com o intuito de me desafiar, montei toda a logica do JS eu mesmo e fiquei feliz com o resultado.</p>
 
  <p>O objetivo do curso foi concluído e fizemos um site responsivo e muito legal, tambem aprendi um pouco mais sobre como fazer menu-hamburger apenas com o css.</p>
+
+<a href="https://juansalles.github.io/Curso-mobile-First/">Link do Projeto!!!</a>
